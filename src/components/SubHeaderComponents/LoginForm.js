@@ -1,14 +1,50 @@
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import React from 'react';
-
+import axios from 'axios';
 import { FacebookProvider, LoginButton } from 'react-facebook';
-
+import {message} from 'antd';
+import moment from 'moment';
 const FormItem = Form.Item;
+
+const url = 'https://app-manhhieubackend.herokuapp.com/api';
 
 class LoginForm extends React.Component {
 
   handleResponse = (data) => {
-    console.log(data);
+
+    var data2 = {
+      email: data.email, 
+      password: data.id, 
+      firstname: data.first_name, 
+      lastname: data.last_name,
+    }
+
+
+    this.register(data2, () => {
+            console.log("OK");
+            message.success('Tạo tài khoản thành công!');
+    });
+    
+  }
+
+
+  register = (data, goLogin) => {
+    axios.post(`${url}/user`,{
+      email: data.email, 
+      password: data.password, 
+      firstname: data.firstname, 
+      lastname: data.lastname,
+      address: data.address,
+      phone: data.phone,
+      status: 1,
+      createat: moment().format(),
+      role: 0
+    }).then(res => {
+   
+      goLogin();
+    }).catch(err => {
+      console.log(err);
+    })
   }
  
   handleError = (error) => {
