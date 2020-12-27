@@ -1,0 +1,284 @@
+body {
+	/*background-color: #B51F21;*/
+	/*background: linear-gradient(#BF2327, #BF2327, #BF2327, #090618, #090618, #090618, #05256E, #05256E, #05256E);  */
+}
+
+.dropdown {
+	float: left;
+	margin: 2% 3% 0 0;
+	font-size: 12pt;
+}
+
+.inputSearch {
+	float: left;
+	width: 50%; 
+	margin-top: 1.5%;
+}
+.btnSearch {
+	margin-top: 1.7%;
+	position: fixed;
+	margin-left: -2.5%;
+	background: linear-gradient(#BF2327, #090618, #05256E);
+}
+.btnSearch:hover {
+	background: linear-gradient(#05256E, #BF2327, #090618);
+}
+
+.logo {
+	margin-left: 0%;
+	float: left;
+	margin-right: 2%;
+}
+
+.rightHeader {
+	float: right;
+	font-size: 12pt;
+	margin-top: 1%;
+	color: white;
+}
+
+.iconCart {
+	font-size: 30pt !important;
+	color: white;
+}
+
+.iconCart:hover, .dangky:hover, .dangnhap:hover {
+	color: #85888F;
+}
+
+#footer {
+	background: linear-gradient(#05256E, #BF2327, #090618);
+	color: white;
+	margin-top: 10px;
+	background: transparent;
+	height: 180px;
+}
+h5 {
+	color: white;
+}
+.footmargin {
+	margin-left: 8%;
+}
+
+#content {
+	margin-top: 66px;
+	margin-left: 5%;
+	width: 90%;
+}
+
+.hightlight {
+	margin: 3% 0 3% 3%;
+	font-size: 12pt;
+}
+
+@keyframes hightlightAnimation {
+    0%   {color: white; left:0px}
+    50%  {color: yellow; left:50px}
+    100% {color: white; left:0px}
+}
+
+.hightlight h3 {
+	font-size: 30pt;
+	position: relative;
+    animation-name: hightlightAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.account {
+	font-size: 14pt;
+	font-weight: bold;
+	color: white !important;
+}
+
+.account-form label {
+	color: white;
+}
+
+.account-form button {
+	margin-left: 45%;
+	background-color: red;
+}
+
+@keyframes account {
+	0% {color: white; left: 0px;}
+	25% {color: white; left: 50px;}
+	50% {color: white; left: 0px;}
+	75% {color: white; left: -50px;}
+	100% {color: white; left: 0px;}
+}
+
+.account-animation {
+	font-size: 20pt;
+	margin: 0% 0 1% 40%;
+	color: white;
+	position: relative;
+    animation-name: account;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.inputcard {
+	margin-left: 30%;
+	text-align: center;
+}
+
+.iconcart {
+	margin-top: 15%;
+}
+
+.imgCard {
+	width: 100%;
+	height: 200px;
+}
+.colCard {
+	width: 16%; 
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.colCard:hover {
+	border-style: solid;
+    border-color: white;
+}
+
+@keyframes hightlightAnimationProduct {
+    0%   {color: white; left:0px}
+    50%  {color: yellow; left:50px}
+    100% {color: white; left:0px}
+}
+
+.hightlight-product h3 {
+	font-size: 30pt;
+	margin: 1% 0% 1% 2%;
+	position: relative;
+    animation-name: hightlightAnimationProduct;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.hightlight-product {
+	margin-left: 200px;
+	min-height: 500px;
+}
+
+.siderStyle {
+	background: transparent;
+	position: fixed;
+	top: 66px;
+	left: 30px;
+}
+
+.width20 {
+	width: 20%;
+}
+
+
+#header {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+
+.rightHeader {
+    float: right;
+    font-size: 12pt;
+    margin-top: 1%;
+    color: #3a2323;
+}
+
+.ant-btn-primary {
+    color: #fff;
+    background-color: #f5222d;
+    border-color: #bf2327;
+}
+
+.ant-btn-primary:hover {
+    color: #fff;
+    background-color: #f5222d;
+    border-color: #bf2327;
+}
+
+.heading2 {
+font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+.heading2 hr {
+    width: 60px;
+    border: 1.5px solid #e24647;
+    text-align: center;
+    margin: 12px auto 20px;
+}
+
+
+.foot-top {
+    background-color: #3d3d3d;
+
+    margin-bottom: 50px;
+}
+
+footer {
+ 
+    padding-top: 0px;
+    background-color: #252525;
+    color: #8C8C8C;
+}
+
+.slide-padding {
+    padding: 0 5px;
+}
+
+
+.service li svg {
+    fill: #b0b0b0;
+    margin: 0 5px;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 0.5px; */
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.iconCart {
+    font-size: 30pt !important;
+    color: #ff0909;
+}
+
+.hightlight h3 {
+    font-size: 30pt;
+    position: relative;
+    -webkit-animation-name: hightlightAnimation;
+    animation-name: none;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.price {
+    color: #000;
+    font-weight: 700;
+    min-height: 21px;
+    font-size: 16px;
+    letter-spacing: 0;
+}
