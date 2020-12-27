@@ -116,14 +116,8 @@ class RegisterForm extends React.Component {
             <Input prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />} type="text" placeholder="Số điện thoại" />
           )}
         </FormItem>
-        <Captcha
-          sitekey = '6LfqhFwUAAAAAOODrXiIvR2CHMfNHjVfe8_pcSIT'
-          lang = 'en'
-          theme = 'light'
-          type = 'image'
-          callback = {() => this.setState({robot: false})}
-        />
-        <Button disabled={this.state.robot} type="primary" htmlType="submit" className="register-form-button">
+    
+        <Button type="primary" htmlType="submit" className="register-form-button">
             Đăng ký
         </Button>{' '}
       </Form>
